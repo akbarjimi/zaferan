@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>روزنامه زعفران</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" >
+	<link rel="stylesheet" type="text/css" href="style.css" >
+	<meta charset="utf-8">
+	<script
+	  src="https://code.jquery.com/jquery-3.2.1.min.js"
+	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	  crossorigin="anonymous">
+	</script>
+</head>
+<body>
+<!-- <div id="test" onclick="myFunction()"> مثلا صفحه خوش آمد گویی داریم</div> -->
+<div class="wrapper">
+
+<div id="header">
+	<img class="col-md-offset-5 col-sm-offset-5 col-xs-offset-5" style="width: 122px;height: 69px; position: absolute;" id="logo" src="img/saffron4.png" >
+	<a href=""><img src="img/rss_icon.png" id="rss_icon"></a>
+	<a href=""><img src="img/pdf_icon.png" id="pdf_icon"></a>
+	<h1 > روزنامه زعفران</h1>
+	<div id="search_box">
+		<img id="search_icon" src="img/search_icon.png">
+		<input  type="text" name="search" id="search_input">
+	</div>
+</div>
+
+<div id="menu_bar">
+	<ul >
+		<li > <a href="">صفحه نخست </a></li>
+		<li > <a href=""> تازه ها</a></li>
+		<li > <a href=""> اقتصاد و توسعه</a></li>
+		<li > <a href=""> دکمه جدید</a></li>
+	</ul>
+
+
+	<div style="width: 120px;height: 40px; float: right; color: red"></div>
+
+	<ul >
+		<li> <a href=""> شهروند</a></li>
+		<li style="font-size: 12px"> <a href=""> فرهنگی-اجتماعی</a></li>
+		<li > <a href="">شهرستان ها</a></li>
+		<li > <a href=""> دکمه جدید</a></li>
+
+	</ul>
+</div>
+<div class="break"></div>
+<!--  end wrapper-->
+</div>
+
+<div id="con">
+<img id="up_left" src="img/up_right.png">
+<div id="left_panel">
+	<ul id="p_title">
+		<li  id="ad_tlt"  > تبلیغات</li>
+		<li id="arch_tlt"> آرشیو</li>
+	</ul>
+	<div id="left_ad">
+		 <a href=""> <div style="background-image: url('img/t4.jpg') ; "></div> </a>
+		 <a href=""> <div style="background-image: url('img/t2.jpg')  ; "></div> </a>
+
+	</div>
+</div>
+	<img id="down_left" src="img/down_right.png">
+<!-- right panle-->
+
+<!-- telegram_panel -->
+<img id="up_right" src="img/up_right.png">
+<div id="telegram_panel">
+		<ul id="p_title">
+			<li  id="tel_tlt">ارتباطات</li>
+		</ul>
+		<a href="https://t.me/zaferannews" target="blank"> <img id="tel_img" src="img/tel.png"></a>
+</div>
+	<img class="down_right" src="img/down_left.png">
+<!--end telegram_panel -->
+<!-- news panel-->
+<img id="up_right" src="img/up_right.png" style="top:162px">
+<div id="news_panel">
+		<ul id="p_title">
+			<li  id="tel_tlt">اخبار</li>
+		</ul>
+		<ul id="news_btn">
+			<li onclick="btn1()"  style="cursor:pointer">لحظه ای</li>
+		<li  onclick="btn2()" style="margin-right: 38px; cursor:pointer">روزنامه </li> 
+		</ul>
+		<img id="news_btn_panel" src="img/button_panel.png">
+		<img id="news_pointer" src="img/pointer.png">
+		<div id="news_board">
+			<div id="news_ontime" ">
+				<p>
+					اخبار لحظه ای اخبار لحظه ای اخبار لحظه ای اخبار لحظه ای اخبار لحظه ای اخبار لحظه ای 
+				</p>
+				<hr>
+				<p>
+						اخبار لحظه ای اخبار لحظه ای اخبار لحظه ای اخبار لحظه ای اخبار لحظه ای اخبار لحظه ای اخبار لحظه ای 
+				</p>
+				<hr>
+				<p>
+						اخبار لحظه ای اخبار لحظه ای اخبار لحظه ای اخبار لحظه ای اخبار لحظه ای اخبار لحظه ای اخبار لحظه ای 
+				</p>
+			</div>
+			<div id="news_newspaper" style="visibility: hidden; ">
+				<p>
+					اخبار روزنامه اخبار روزنامه اخبار روزنامه اخبار روزنامه اخبار روزنامه اخبار روزنامه اخبار روزنامه اخبار روزنامه اخباراخبار روزنامه اخبار
+				</p>
+				<hr>
+				<p>
+					اخبار روزنامه اخبار روزنامه اخبار روزنامه اخبار روزنامه اخبار روزنامه اخبار روزنامه اخبار روزنامه اخبار روزنامه اخباراخبار روزنامه اخبار
+				</p>
+			</div>
+		</div>
+</div>
+	<img class="down_right" src="img/down_left.png" style="top:414px ; right:-31px">
+<!--end news_panel -->
+<!--  media panel-->
+<img id="up_right" src="img/up_right.png" style="top:482px">
+<div id="media_panel">
+		<ul id="p_title">
+			<li  id="tel_tlt">رسانه</li>
+		</ul>
+		<ul id="media_btn">
+			<li onclick="btnpic()" style="cursor:pointer">عکس</li>
+			<li  onclick="btnmovie()" style="margin-right: 54px; cursor:pointer">فیلم </li>
+		</ul>
+		<img id="news_btn_panel" src="img/button_panel.png">
+		<img id="movie_pointer" src="img/pointer.png">
+		<div id="media_board">
+			<div id="media_pic_panel" >
+
+				<img id="media_img" src="pic/2.jpg">
+				<p id="media_text">
+					متن مربوط به عکس. متن مربوط به عکس
+				</p>
+				<hr>
+				
+				<img id="media_img" src="pic/1.jpg">
+				<p id="media_text">
+					متن مربوط به عکس. متن مربوط به عکس
+				</p>
+				<hr>
+								
+				<img id="media_img" src="img/post_img.jpg">
+				<p id="media_text">
+					متن مربوط به عکس. متن مربوط به عکس
+				</p>
+				<hr>
+
+			</div>
+
+			<div id="media_movie_panel" style="visibility: hidden;">
+
+				<img id="media_img" src="img/post_img.jpg">
+				<p id="media_text">
+					عنوان فیلم عنوان فیلم
+				</p>
+				<hr>
+				
+				<img id="media_img" src="img/post_img.jpg">
+				<p id="media_text">
+					عنوان فیلم عنوان فیلم
+
+				</p>
+				<hr>
+								
+				<img id="media_img" src="img/post_img.jpg">
+				<p id="media_text">
+					عنوان فیلم عنوان فیلم
+
+				</p>
+				<hr>
+				
+
+			</div>
+		</div>
+</div>
+	<img class="down_right" src="img/down_left.png" style="top:805px ; right:-61px">
+
+
+<!-- end media panel-->
+
+	<div id="c_banner"></div> 
+	
+	<div id="page_number">
+	
+	<div id="numbers">
+		
+		<a style="cursor: pointer;" id="8" class="target">۸</a>
+		<a style="cursor: pointer;" id="7" class="target">۷</a>
+		<a style="cursor: pointer;" id="6" class="target">۶</a>
+		<a style="cursor: pointer;" id="5" class="target">۵</a>
+		<a style="cursor: pointer;" id="4" class="target">۴</a>
+		<a style="cursor: pointer;" id="3" class="target">۳</a>
+		<a style="cursor: pointer;" id="2" class="target">۲</a>
+		<a style="cursor: pointer;" id="1" class="target" >۱</a>
+		
+	</div>
+	<a style="cursor: pointer;" id="forward_btn"> << </a>
+	<a style="cursor: pointer;" id="back_btn"> >> </a>
+	</div>
+	
+	<div id="content">
+		<img src="" id="newspaper_page_img">
+	</div>
+	<div class="break"></div>
+</div>
+<div class="wrapper" >
+<div id="footer">
+	<div id="l_footer">
+		<div class="box" id="address"><span> آدرس:بیرجند. حاشیه میدان توحید. مجتمع فرهنگی زاهدی‌پور </span></div>
+		<div class="box" id="tell"><span> تلفن: ۰۵۶۳۲۴۲۱۸۳۰ </span></div>
+		<div class="box" id="fax"><span> فکس: ۰۵۶۳۲۴۲۱۸۳۰ </span></div>
+		<div class="box" id="address"><span>  zaferannews@gmail.com :ایمیل</span></div>
+	</div>
+	<div id="r_footer">
+		
+			<span id="r-title">:پیوند ها</span>
+		<div id="r_text">
+			<span>PDF نسخه ی </span>
+
+			<span>سفارش تبلیغات</span>
+
+			<span style="border-bottom: 0px">درباره ی ما</span>
+
+		</div>
+	</div>
+	
+	<div id="m_footer">
+		<div class="footer_ads" id="footer_ad_r">
+			<div style="background-image: url('img/t2.jpg') ; "></div>
+			<div style="background-image: url('img/t4.jpg') ; "></div>
+		</div>
+		
+		<div class="footer_ads" id="footer_ad_l">
+			<div style="background-image: url('img/t4.jpg') ; "> </div>
+			<div style="background-image: url('img/t4.jpg') ; "> </div>
+		</div>
+	</div>
+
+	<div id="copyright"> <p>.تمامی حقوق مادی و معنوی این وب سایت متعلق به روزنامه <span style="color: #b40d9a"> زعفران </span>می باشد</p></div>
+	<div id="buttom_space"></div>
+</div>
+</div>
+
+
+<script type="text/javascript">
+	function btn1()
+	{
+		var pointer =document.getElementById('news_pointer');
+		// btn1.style.position = "absolute";
+		pointer.style.right=35+'px';
+			document.getElementById('news_ontime').style.visibility = 'visible';
+			document.getElementById('news_newspaper').style.visibility = 'hidden';
+	}
+
+	function btn2()
+	{
+		var pointer =document.getElementById('news_pointer');
+		// btn1.style.position = "absolute";
+		pointer.style.right=125+'px';
+		document.getElementById('news_ontime').style.visibility = 'hidden';
+		document.getElementById('news_newspaper').style.visibility = 'visible';
+	}
+
+	function btnmovie()
+	{
+		var pointer =document.getElementById('movie_pointer');
+		// btn1.style.position = "absolute";
+		pointer.style.right=125+'px';
+		document.getElementById('media_pic_panel').style.visibility = 'hidden';
+		document.getElementById('media_movie_panel').style.visibility = 'visible';
+	}
+	function btnpic()
+	{
+		var pointer =document.getElementById('movie_pointer');
+		// btn1.style.position = "absolute";
+		pointer.style.right=35+'px';
+		document.getElementById('media_pic_panel').style.visibility = 'visible';
+		document.getElementById('media_movie_panel').style.visibility = 'hidden';
+	}
+
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		
+		var newspaper_src_array=[
+		"img/newspaper.png",
+		"img/post_img.jpg",
+		"img/btn.png",
+		"img/c_banner.png",
+		"img/down_left.png",
+		"img/saffron.png",
+		"img/rss_icon.png",
+		"img/pdf_icon.png",
+		];
+
+		var array_index = 0;
+		
+		$("#newspaper_page_img").attr("src",newspaper_src_array[array_index]);
+
+		$("#back_btn").click(function(){
+			if (array_index > 0) {			
+				array_index--;
+				$("#newspaper_page_img").attr("src",newspaper_src_array[array_index]);
+				movePaginationSelectedStyle(array_index);			
+			}
+		});
+
+		$("#forward_btn").click(function(){
+			if (array_index < 7) {
+				array_index++;
+				$("#newspaper_page_img").attr("src",newspaper_src_array[array_index]);
+				movePaginationSelectedStyle(array_index);			
+			}
+		});		
+
+
+		$("#numbers a")
+		.click(function(){
+			array_index = $(this).prop("id");
+			$("#newspaper_page_img").attr("src",newspaper_src_array[array_index-1]);
+			resetPaginationSelectedStyle();
+			$(this).css({
+				'background-image': 'url(img/page_number2.png) ',
+				'background-repeat':'no-repeat',
+				'background-position':'center',
+				'background-size':'23px 27px'
+			});
+		});
+
+		function resetPaginationSelectedStyle()
+		{
+			$("#numbers a").each(function(){
+				$(this).css('background-image','');
+			});				
+		}
+
+		function movePaginationSelectedStyle(array_index)
+		{
+			resetPaginationSelectedStyle();
+			$("#numbers a[id=" + array_index +"]").css({
+				'background-image': 'url(img/page_number2.png) ',
+				'background-repeat':'no-repeat',
+				'background-position':'center',
+				'background-size':'23px 27px'
+			});				
+		}
+	});
+</script>
+</body>
+</html>
